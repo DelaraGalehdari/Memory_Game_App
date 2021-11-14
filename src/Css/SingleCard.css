@@ -1,0 +1,32 @@
+.card {
+  position: relative;
+}
+.card img {
+  width: 100%;
+  display: block;
+
+  border-radius: 6px;
+  height: 175px;
+  width: 125px;
+}
+/* front card */
+.card .front {
+  transform: rotateY(90deg);
+  position: absolute;
+  border: 2px solid rgb(241, 135, 48);
+}
+.flipped .front {
+  transform: rotateY(0deg);
+  transition-delay: 0.2s;
+}
+/* back card */
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+  border: 2px solid rgb(44, 43, 109);
+}
+
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
+}
